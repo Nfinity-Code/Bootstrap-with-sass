@@ -1,0 +1,13 @@
+@use '../custom' as *;
+@use '../component/mixin' as *;
+
+
+.faq{
+  margin: 0 2rem;
+  &__size{
+    margin:0 auto;
+    max-width: 70%;
+    // box-sizing: border-box;
+  
+  }
+}

@@ -1,0 +1,61 @@
+@use '../custom' as *;
+@use '../component/mixin' as *;
+
+.footer {
+  padding: 1em 0 1em 0;
+  background-color: black;
+
+  &--container {
+    // margin: 0 auto;
+    // padding: 2em 0 2em 0;
+     text-align: center;
+
+    .info {
+      &--col {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+
+       .icon {
+          color: $navyblue;
+          font-size: 50px;
+          text-align: center;
+
+        }
+
+        .details {
+          text-align: center;
+          margin: 0 auto;
+          padding: 0.5em;
+          margin: 0 1em;
+
+          h3 {
+            color: aliceblue;
+            font-weight: 500;
+            font-size: 1em;
+            display: inline;
+          }
+
+          p {
+            font-weight: 400;
+
+
+          }
+        }
+      }
+    }
+  }
+}
+.hover{
+  color: white;
+}
+.hover:hover{
+  color:$navyblue
+  // background-color: red;
+}
+.copy{
+  @include media-breakpoint-up(lg) {
+   font-size: 2px;
+  }
+}

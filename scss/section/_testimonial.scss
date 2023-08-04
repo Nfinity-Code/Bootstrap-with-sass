@@ -1,0 +1,38 @@
+@use '../custom' as *;
+@use '../component/mixin' as *;
+
+.testimonial{
+  position: relative;
+  @include gradient;
+  &__card{
+    background-color:rgba($white,0.6) ;
+    color: rgba($navyblue,0.7);
+    margin: 0 auto;
+    border-radius: 30px;
+    padding: 2rem;
+    height: auto;
+   
+    
+  }
+  
+}
+.position{
+  position: relative;
+  bottom: 45px;
+  &__picture{
+  
+    width: 120px;
+    height: 120px;
+    margin: 0 auto;
+    border: 7px solid rgba($navyblue,0.7);
+    border-radius: 60%;
+
+    
+    img{
+      width: 100%;
+      height: 100%;  
+     object-fit: cover;
+    }
+    
+  }
+}

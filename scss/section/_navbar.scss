@@ -1,0 +1,27 @@
+@use '../custom' as *;
+@use '../component/mixin' as *;
+    
+
+.menu{
+  padding-bottom: 0;
+  @include gradient;
+li{
+  padding:1em;
+  font-weight: bold;
+}
+
+.image-container {
+  height: 83px;
+  background-color: transparent;
+  background-clip: content-box;
+  width: 192px;
+  img {
+    height: 100%;
+      width: 100%;
+      object-fit: cover;
+
+  }
+  
+}
+ 
+}

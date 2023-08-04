@@ -1,0 +1,60 @@
+@use '../custom' as *;
+@use '../component/mixin' as *;
+
+.intro-section{
+  height: 100%;
+  width: 100%;
+  @include gradient;
+  
+  padding: 0.2em 0 0 0;
+  
+}
+.intros{
+   position:relative;
+  padding: 4em 0 0.5em 0 ;
+  margin-bottom: 0;
+  @include media-breakpoint-down(sm){
+    padding: 0em 2em;
+    margin-bottom: 0.2em;
+    
+  }
+  .video-box{
+    
+    img{
+      width: 100%;
+      height: 100%;
+    }
+    a{
+      // @include absolutecenter;
+      span{
+        i{
+           font-size: 5rem;
+           color: $purple;
+           
+        }
+        i:hover{
+          color:$light-navyblue;
+         }
+
+      }
+    }
+  }
+}
+.animation{
+  position: absolute;
+  height: 5rem;
+  width: 5rem;
+  border: 0.5rem solid $gray-300;
+  top: 0;
+  left: 0;
+  border-radius: 50%;
+  animation: pulse 1.5s linear infinite; 
+  // delay iteration-count direction fill-mode;
+&--border-1{
+  animation-delay: 1s;
+}
+&--border-2{
+  animation-delay: 1.5s;
+}
+
+}

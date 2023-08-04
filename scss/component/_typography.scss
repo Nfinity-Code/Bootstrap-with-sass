@@ -1,0 +1,107 @@
+@use '../custom' as *;
+@use '../component/mixin' as *;
+.display-2,.display-3{
+  margin-bottom: 0.5em;
+  text-transform: capitalize;
+  font-family: 'Poppins', sans-serif;
+  margin-top: 1em;
+  
+
+ 
+  &--intro{
+    display: inline-block;
+    font-weight: 600;
+     margin: 0 0 0.3em 0;
+     @include media-breakpoint-down(lg){
+      margin-top: 1.5em;
+       font-size: 2rem;
+     }
+  }
+  &--description{
+    display: block;
+    font-size: 1.2rem;
+    text-transform: none;
+    margin-bottom: 0;
+    @include media-breakpoint-down(lg){
+    
+       font-size: 0.6rem;
+     }
+  }
+}
+
+// heading-line 
+.line::before{
+content: '';
+width:13rem;
+height:0.15em;
+@include gradient;
+display: block;
+margin: 0 auto;
+
+}
+.line::after{
+  content: '';
+  width:2.5rem;
+  height:0.4em;
+  @include gradient;
+  display: block;
+  margin: 0 auto;
+  margin-bottom: 1em;
+  
+  }
+
+  // service section 
+  .display-3{
+    font-size: 3rem;
+    &--title{
+      background: #10143C;
+    background: linear-gradient(to right, #10143C 0%, #52149E 100%);
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    }
+  }
+  .border-right{
+    border-right: 1px solid $gray-400;
+    height: 100%;
+     @include media-breakpoint-down(md){
+      border-bottom: 1px solid $gray-400 !important;
+      width: 100%;
+      border-right: none;
+      font-size: 2px;
+      h3{
+        font-size: 1.5rem;
+      }
+     }
+  }
+
+
+  // testimonial 
+  .testimonial-section{
+    color:$white;
+    .line::before{
+      background: $white;
+    }
+    .line::after{
+      background: $white;
+      height: 0.2em;
+    }
+    
+  }
+
+  // faq 
+  
+   .faq{
+    .line::before{
+     width: 5rem;
+    }
+    .line::after{
+      width: 1rem;
+    }
+   }
+   
+  //  portfolio 
+
+
+
+  

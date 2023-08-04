@@ -1,0 +1,77 @@
+@use '../custom' as *;
+@use '../component/mixin' as *;
+.button{
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  height: 100%;
+.btn-rounded {
+  @include media-breakpoint-down(xl) {
+    display: none;
+
+  }
+
+
+  
+  background-color: $navyblue;
+  padding: 0.4rem;
+  color: $white;
+  font-weight: bold;
+  margin: 0;
+  font-size: 13px;
+  // max-width: 40%;
+  outline: none;
+  border: none;
+  transition: all 0.5s ease;
+
+  span {
+
+    
+    border-radius: 50%;
+    background-color: $navyblue;
+    border: 1px solid $white;
+    display: inline-block;
+    margin-left:2rem;
+    
+
+
+    i {
+      
+      font-size: 1.4em;
+      padding: 0.5rem;
+      // left: 7px;
+      
+
+    }
+
+  }
+
+  &:hover {
+
+    color: $hover;
+    @include gradient;
+
+    span {
+      background-color: rgba($black, 0.3);
+    }
+  }
+
+}
+}
+
+// testimonial-section 
+.arrow-btn{
+  width:55px;
+  margin: 0 auto;
+}
+
+
+// faq__section 
+.faq__button{
+width:100%
+}
+
+
+// portfolio
+
+

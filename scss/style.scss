@@ -1,0 +1,25 @@
+@use 'custom';
+
+
+// import components 
+@use 'component/animation';
+@use 'component/button';
+@use 'component/mixin';
+@use 'component/typography';
+
+// import section 
+@use 'section/companies';
+@use 'section/faq';
+@use 'section/footer';
+@use 'section/getstarted';
+@use 'section/intro';
+@use 'section/latestwork';
+@use 'section/navbar';
+@use 'section/services';
+@use 'section/testimonial';
+// *{
+//   border: 1px solid red;
+// }
+html{
+  scroll-behavior: smooth;
+}

@@ -1,0 +1,25 @@
+@use '../custom' as *;
+@use '../component/mixin' as *;
+
+
+  .information{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+.service-info{
+  
+   margin: 1em;
+   img{
+    margin-bottom: 1rem;
+    width: 50px;
+   }
+  
+
+}
+  }
+.illustration{
+  img{
+    width: 100%;
+  }
+}

@@ -1,0 +1,32 @@
+@use '../custom' as *;
+@use '../component/mixin' as *;
+
+.started-section {
+  background-color: $gray-300;
+  padding: 2rem;
+
+  .left {
+    @include gradient;
+
+    @include media-breakpoint-up(lg) {
+      height: 500px;
+    }
+
+
+
+    .unorderd {
+      &__sec {
+        position: relative;
+        list-style-type: none;
+        display: block;
+      }
+    }
+  }
+
+}
+
+
+
+.resize {
+  resize: none;
+}
